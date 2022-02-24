@@ -1,0 +1,16 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "sample node.js client app to receive NAT messages",
+  "main": "client.js",
+  "dependencies": {},
+  "devDependencies": {
+    "nats.ws": "^1.7.2",
+    "websocket": "^1.0.34"
+  },
+  "scripts": {
+    "start": "node client.js"
+  },
+  "author": "https://benjaminpritchard.org",
+  "license": "MIT"
+}

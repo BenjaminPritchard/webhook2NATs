@@ -1,0 +1,1 @@
+curl -v --request POST --url http://localhost:8080/webhook/ --data 'hello'
