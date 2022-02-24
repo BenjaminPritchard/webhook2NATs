@@ -33,7 +33,7 @@ func webhookHandler(nc *nats.Conn) http.HandlerFunc {
 			return
 		}
 
-		err = nc.Publish("webHook", body)
+		err = nc.Publish("webhook", body)
 		log.Print(string(body))
 
 		if err != nil {

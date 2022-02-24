@@ -1,8 +1,8 @@
 # webhook2NATs
 
-This is a little server utility that publishes data received via HTTP POSTS as a NATs message.
+This is a little server utility that publishes data received via HTTP POSTs as a [NATS](https://nats.io/) message.
 
-This could, for example, be useful if you are dealing with an API that does HTTP posts to alert you of something, but you can't get the HTTP Posts on your local development machine.
+This could, for example, be useful if you are dealing with an API that does HTTP POSTs to alert you of something, but you can't get the HTTP Posts on your local development machine.
 
 ## Server
 
@@ -15,6 +15,8 @@ Finally the [GO's http package](https://pkg.go.dev/net/http) is used to setup an
 ## Client
 
 This is a node.js server-side client that uses the [NATS client library](github.com/nats-io/nats.go) to connect to the GO server, subscribes to the "webhook" messages, and prints the received data.
+
+(NOTE that obviously the client is just an example for you to use to integrate subscribing to the NATs message into your code.)
 
 ## Start Server
 
